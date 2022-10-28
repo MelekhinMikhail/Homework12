@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Book harryPotter = new Book("Harry Potter", "Joanne Rowling", 1998);
-        Book hobbit = new Book("Hobbit", "John Tolkien", 1991);
         Author rowling = new Author("Joanne", "Rowling");
         Author tolkien = new Author("John", "Tolkien");
+        Book harryPotter = new Book("Harry Potter", rowling, 1998);
+        Book hobbit = new Book("Hobbit", tolkien, 1991);
         harryPotter.setYearOfThePublication(1995);
         System.out.println("harryPotter.getYearOfThePublication() = " + harryPotter.getYearOfThePublication());
         //Средний уровень

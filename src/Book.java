@@ -3,9 +3,9 @@ public class Book {
     private String author;
     private int yearOfThePublication;
 
-    public Book(String name, String author, int year) {
+    public Book(String name, Author author, int year) {
         this.name = name;
-        this.author = author;
+        this.author = author.getName()+" "+author.getSurname();
         this.yearOfThePublication = year;
     }
 
